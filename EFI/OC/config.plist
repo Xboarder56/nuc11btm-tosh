@@ -230,7 +230,15 @@
         <key>DeviceProperties</key>
         <dict>
             <key>Add</key>
-            <dict/>
+            <dict>
+                <key>PciRoot(0x0)/Pci(0x1B,0x3)/Pci(0x0,0x0)</key>
+                <dict>
+                    <key>device-id</key>
+                    <data>8hUAAA==</data>
+                    <key>revision-id</key>
+                    <data>AQAAAA==</data>
+                </dict>
+            </dict>
             <key>Delete</key>
             <dict/>
         </dict>
@@ -285,24 +293,6 @@
                     <true/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/IntelBluetoothFirmware</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
-                    <string>IntelMausi.kext</string>
-                    <key>Comment</key>
-                    <string>IntelMausi.kext</string>
-                    <key>Enabled</key>
-                    <false/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/IntelMausi</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -557,7 +547,7 @@
                 <key>MaxKernel</key>
                 <string></string>
                 <key>MinKernel</key>
-                <string></string>
+                <string>19.0.0</string>
             </dict>
             <key>Force</key>
             <array>
@@ -597,7 +587,7 @@
                 <key>CustomSMBIOSGuid</key>
                 <false/>
                 <key>DisableIoMapper</key>
-                <true/>
+                <false/>
                 <key>DisableLinkeditJettison</key>
                 <true/>
                 <key>DisableRtcChecksum</key>
@@ -802,12 +792,12 @@
                 </dict>
                 <key>4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102</key>
                 <dict>
-                    <key>revcpu</key>
-                    <string>1</string>
-                    <key>revcpuname</key>
-                    <string>8-Core Intel i9-11900KB</string>
                     <key>rtc-blacklist</key>
                     <data></data>
+                    <key>revcpuname</key>
+                    <string>8-Core Intel i9-11900KB</string>
+                    <key>revcpu</key>
+                    <integer>1</integer>
                 </dict>
                 <key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
                 <dict>
@@ -818,7 +808,7 @@
                     <key>SystemAudioVolume</key>
                     <data>Rg==</data>
                     <key>boot-args</key>
-                    <string>keepsyms=1 debug=0x100 -wegnoigpu agdpmod=pikera e1000=0 dk.e1000=0</string>
+                    <string>keepsyms=1 debug=0x100 -wegnoigpu agdpmod=pikera e1000=0</string>
                     <key>csr-active-config</key>
                     <data>AAAAAA==</data>
                     <key>prev-lang:kbd</key>
@@ -836,6 +826,7 @@
                 <key>4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102</key>
                 <array>
                     <string>rtc-blacklist</string>
+                    <string>revcpuname</string>
                 </array>
                 <key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
                 <array>
@@ -923,13 +914,13 @@
                 <key>AdviseFeatures</key>
                 <true/>
                 <key>MLB</key>
-                <string>F5K904303GUFHDDFB</string>
+                <string>--REPLACE WITH SMBIOS GEN--</string>
                 <key>MaxBIOSVersion</key>
                 <false/>
                 <key>ProcessorType</key>
-                <integer>0</integer>
+                <integer>3841</integer>
                 <key>ROM</key>
-                <data></data>
+                <data>AAAAAAAA</data>
                 <key>SpoofVendor</key>
                 <false/>
                 <key>SystemMemoryStatus</key>
@@ -937,9 +928,9 @@
                 <key>SystemProductName</key>
                 <string>MacPro7,1</string>
                 <key>SystemSerialNumber</key>
-                <string>F5KY5PZWP7QM</string>
+                <string>--REPLACE WITH SMBIOS GEN--</string>
                 <key>SystemUUID</key>
-                <string>6B6D0AB5-2A42-42F5-99D3-70EE48593E77</string>
+                <string>--REPLACE WITH SMBIOS GEN--</string>
             </dict>
             <key>PlatformNVRAM</key>
             <dict>
