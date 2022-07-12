@@ -2,7 +2,7 @@
 
 Repo housing work for launching nuc11btm-tosh Monteray. This is very much a WIP.
 
-This requires the use of a AMD supported GPU, currently the boot-args contains the patch for 6800 series of cards.
+This requires the use of a AMD supported GPU, currently the boot-args contains the patch for 6800 series of cards. Additionally, I have swapped the WiFi (AX210) with a Broadcom M.2 supported card so the intel kexts are not provided.
 
 ## Not Working
  - iGPU (UHD 750) - not supported under macOS
@@ -13,3 +13,4 @@ This requires the use of a AMD supported GPU, currently the boot-args contains t
  - Card Reader
  - TB4 (No Hot plug)
  - USB
+ - Sleep
