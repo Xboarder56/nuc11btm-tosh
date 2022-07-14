@@ -230,7 +230,15 @@
 	<key>DeviceProperties</key>
 	<dict>
 		<key>Add</key>
-		<dict/>
+		<dict>
+			<key>#PciRoot(0x0)/Pci(0x1B,0x3)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>subsystem-vendor-id</key>
+				<data>WBQAAA==</data>
+				<key>device-id</key>
+				<data>8hUAAA==</data>
+			</dict>
+		</dict>
 		<key>Delete</key>
 		<dict/>
 	</dict>
@@ -507,7 +515,7 @@
 			<key>CustomSMBIOSGuid</key>
 			<false/>
 			<key>DisableIoMapper</key>
-			<false/>
+			<true/>
 			<key>DisableLinkeditJettison</key>
 			<true/>
 			<key>DisableRtcChecksum</key>
