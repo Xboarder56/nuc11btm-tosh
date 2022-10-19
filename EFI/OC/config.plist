@@ -652,6 +652,10 @@
 			<true/>
 			<key>XhciPortLimit</key>
 			<false/>
+			<key>CustomPciSerialDevice</key>
+			<false/>
+			<key>ForceAquantiaEthernet</key>
+			<false/>
 		</dict>
 		<key>Scheme</key>
 		<dict>
@@ -712,8 +716,6 @@
 			<integer>2147483650</integer>
 			<key>LogModules</key>
 			<string>*</string>
-			<key>SerialInit</key>
-			<false/>
 			<key>SysReport</key>
 			<false/>
 			<key>Target</key>
@@ -742,16 +744,12 @@
 		</array>
 		<key>Security</key>
 		<dict>
-			<key>AllowNvramReset</key>
-			<false/>
 			<key>AllowSetDefault</key>
 			<true/>
-			<key>AllowToggleSip</key>
-			<false/>
 			<key>ApECID</key>
 			<integer>0</integer>
 			<key>AuthRestart</key>
-			<true/>
+			<false/>
 			<key>BlacklistAppleUpdate</key>
 			<true/>
 			<key>DmgLoading</key>
@@ -772,6 +770,13 @@
 			<string>Default</string>
 			<key>Vault</key>
 			<string>Optional</string>
+		</dict>
+		<key>Serial</key>
+		<dict>
+			<key>Init</key>
+			<false/>
+			<key>Override</key>
+			<false/>
 		</dict>
 		<key>Tools</key>
 		<array>
@@ -794,6 +799,8 @@
 				<false/>
 				<key>TextMode</key>
 				<false/>
+				<key>FullNvramAccess</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>Arguments</key>
@@ -813,6 +820,8 @@
 				<key>RealPath</key>
 				<false/>
 				<key>TextMode</key>
+				<false/>
+				<key>FullNvramAccess</key>
 				<false/>
 			</dict>
 		</array>
@@ -844,7 +853,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>keepsyms=1 debug=0x100 -wegnoigpu agdpmod=pikera e1000=0</string>
+				<string>keepsyms=1 debug=0x100 -wegnoigpu agdpmod=pikera</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
@@ -873,8 +882,6 @@
 				<string>csr-active-config</string>
 			</array>
 		</dict>
-		<key>LegacyEnable</key>
-		<false/>
 		<key>LegacyOverwrite</key>
 		<false/>
 		<key>LegacySchema</key>
@@ -950,13 +957,13 @@
 			<key>AdviseFeatures</key>
 			<true/>
 			<key>MLB</key>
-			<string>--REPLACE WITH SMBIOS GEN--</string>
+			<string>F5K150200CDK3F71F</string>
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>ProcessorType</key>
 			<integer>3841</integer>
 			<key>ROM</key>
-			<data>AAAAAAAA</data>
+			<data>3Cthq/OY</data>
 			<key>SpoofVendor</key>
 			<false/>
 			<key>SystemMemoryStatus</key>
@@ -964,9 +971,9 @@
 			<key>SystemProductName</key>
 			<string>MacPro7,1</string>
 			<key>SystemSerialNumber</key>
-			<string>--REPLACE WITH SMBIOS GEN--</string>
+			<string>F5KGTQYMP7QM</string>
 			<key>SystemUUID</key>
-			<string>--REPLACE WITH SMBIOS GEN--</string>
+			<string>8A456D1F-F13D-434D-BADF-5B38F21EFD79</string>
 		</dict>
 		<key>PlatformNVRAM</key>
 		<dict>
@@ -1131,6 +1138,8 @@
 				<true/>
 				<key>Path</key>
 				<string>AudioDxe.efi</string>
+				<key>LoadEarly</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>Arguments</key>
@@ -1141,6 +1150,8 @@
 				<true/>
 				<key>Path</key>
 				<string>CrScreenshotDxe.efi</string>
+				<key>LoadEarly</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>Arguments</key>
@@ -1151,6 +1162,8 @@
 				<true/>
 				<key>Path</key>
 				<string>HfsPlus.efi</string>
+				<key>LoadEarly</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>Arguments</key>
@@ -1161,6 +1174,8 @@
 				<true/>
 				<key>Path</key>
 				<string>OpenCanopy.efi</string>
+				<key>LoadEarly</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>Arguments</key>
@@ -1171,6 +1186,8 @@
 				<true/>
 				<key>Path</key>
 				<string>OpenHfsPlus.efi</string>
+				<key>LoadEarly</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>Arguments</key>
@@ -1181,6 +1198,8 @@
 				<true/>
 				<key>Path</key>
 				<string>OpenRuntime.efi</string>
+				<key>LoadEarly</key>
+				<false/>
 			</dict>
 		</array>
 		<key>Input</key>
