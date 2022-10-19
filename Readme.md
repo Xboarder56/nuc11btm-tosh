@@ -14,6 +14,7 @@ This requires the use of a AMD supported GPU, currently the boot-args contains t
 
 ## Not Working
  - iGPU (UHD 750) - not supported under macOS
+ - Sleep (Kernel Panics)
  - LAN (i225-LM (3)) - Potentially can support, it should be native and it detects fine but won't connect
 
 ## Working
@@ -21,5 +22,4 @@ This requires the use of a AMD supported GPU, currently the boot-args contains t
  - Card Reader
  - TB4 (No Hot plug)
  - USB
- - Sleep
  - Intel AX210 (Wifi + Bluetooth)
